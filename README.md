@@ -27,4 +27,4 @@ Welcome! This repository showcases my upcoming frontend projects that will be ad
 ## 🔹 How to View
 1. Clone the repository:  
 ```bash
-git clone https://github.com/YOUR_USERNAME/future-projects.git
+git clone [https://github.com/YOUR_USERNAME/future-projects.git](https://bereketgetu77-del.github.io/Future-Projects/)
