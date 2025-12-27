@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Projects | Bereket Getu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>My Future Projects 🚀</h1>
+  <p>These are upcoming projects I will add to my portfolio</p>
+</header>
+
+<section class="filter-section">
+  <button class="filter-btn" data-type="all">All</button>
+  <button class="filter-btn" data-type="html">HTML</button>
+  <button class="filter-btn" data-type="css">CSS</button>
+  <button class="filter-btn" data-type="js">JS</button>
+  <button class="filter-btn" data-type="full">Full Package</button>
+</section>
+
+<section class="projects-section">
+  <div class="project-card" data-type="html">
+    <h3>Interactive Quiz Game</h3>
+    <p>Build a fun quiz with multiple-choice questions and score tracking.</p>
+    <span class="badge">Coming Soon</span>
+    <span class="price">$15 – $25</span>
+  </div>
+
+  <div class="project-card" data-type="css">
+    <h3>Animated Landing Page</h3>
+    <p>Stylish landing page with animations and responsive layout.</p>
+    <span class="badge">Coming Soon</span>
+    <span class="price">$20 – $35</span>
+  </div>
+
+  <div class="project-card" data-type="js">
+    <h3>To-Do List App</h3>
+    <p>Task manager with localStorage, add/delete/complete functionality.</p>
+    <span class="badge">Coming Soon</span>
+    <span class="price">$25 – $40</span>
+  </div>
+
+  <div class="project-card" data-type="full">
+    <h3>E-Library Website</h3>
+    <p>Full-stack project with HTML, CSS, and JS integration.</p>
+    <span class="badge">Coming Soon</span>
+    <span class="price">$50 – $80</span>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Bereket Getu | Frontend Developer</p>
+</footer>
+
+<script>
+  // Filter projects
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projects = document.querySelectorAll('.project-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const type = btn.dataset.type;
+
+      projects.forEach(proj => {
+        if(type === 'all' || proj.dataset.type === type) {
+          proj.style.display = 'block';
+        } else {
+          proj.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
